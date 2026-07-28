@@ -1,0 +1,46 @@
+{
+  "name": "sliding-rate-limiter",
+  "version": "1.0.0",
+  "description": "A TypeScript sliding window rate limiter with Memory and Redis support",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "keywords": [
+    "rate-limiter",
+    "rate-limit",
+    "sliding-window",
+    "express",
+    "redis",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Hamza Ashfaq",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^5.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "express": "^5.2.1",
+    "supertest": "^7.2.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.10"
+  }
+}
